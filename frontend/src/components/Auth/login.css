@@ -1,0 +1,89 @@
+.login-container .header {
+  margin: 10px 15px;
+  height: 45px;
+  font-size: 14px;
+  text-align: right;
+}
+.login-container .header button {
+  border: 1px solid #000000;
+  border-radius: 2px;
+  background-color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  margin: 0px 5px;
+}
+.login-container .header button .link {
+  text-decoration: none;
+  color: #000000;
+}
+.login-container .header .support {
+  color: #000000;
+}
+.login-container .title {
+  padding: 50px;
+  font-size: 30px;
+  font-weight: 700px;
+}
+.login-container .welcome {
+  padding: 20px;
+  font-size: 20px;
+}
+.login-container .content-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-container .content-form label {
+  font-weight: 500;
+}
+.login-container .content-form input {
+  margin-top: 7px;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+.login-container .content-form .forgot-password {
+  color: #777;
+  font-size: 14px;
+  font-weight: 520;
+}
+.login-container .content-form .btn-submit {
+  width: 100%;
+  border: none;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+.login-container .content-form .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.login-container .content-form .divider::after,
+.login-container .content-form .divider::before {
+  content: "";
+  border: 1px solid #a7a7a7;
+  flex: 1;
+}
+.login-container .content-form .divider:not(:empty)::before {
+  margin-right: 0.6em;
+}
+.login-container .content-form .divider:not(:empty)::after {
+  margin-left: 0.6em;
+}
+.login-container .content-form .gmail {
+  background-color: #fbfbfb;
+  color: #5e5e5e;
+  border: 1px solid #c3c3c3;
+}
+.login-container .content-form .gmail:hover {
+  background-color: #ffffff;
+}
+.login-container .content-form .microsoft {
+  background-color: #fbfbfb;
+  color: #5e5e5e;
+  border: 1px solid #c3c3c3;
+}
+.login-container .content-form .microsoft:hover {
+  background-color: #ffffff;
+}/*# sourceMappingURL=login.css.map */
