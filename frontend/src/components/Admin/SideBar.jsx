@@ -1,49 +1,3 @@
-// import { ProSidebarProvider, SubMenu, Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
-// import { AiFillPieChart} from 'react-icons/ai';
-// import { SiGooglemaps } from "react-icons/si";
-// import { FaAffiliatetheme, FaShoppingCart } from "react-icons/fa";
-// import { HiDocumentText } from "react-icons/hi";
-// import { BsFillCalendarFill } from "react-icons/bs";
-// import { RiServiceFill } from "react-icons/ri";
-
-// const SideBar = (props) => {
-//     const {collapsed} = props
-
-//     return (  
-//         <>
-//             <ProSidebarProvider>
-//                 <div style={{ display: 'flex', height: '100%' }}>
-//                     <Sidebar 
-//                         image="https://i.pinimg.com/736x/8e/6c/06/8e6c064f57f94838263d7ba9ad80f353.jpg" 
-//                         collapsed = {collapsed}>
-//                         <Menu>
-//                             <Menu>
-//                                 <SubMenu icon={<AiFillPieChart />} label="Charts">
-//                                     <MenuItem> Pie charts</MenuItem>
-//                                     <MenuItem> Line charts</MenuItem>
-//                                     <MenuItem> Bar charts</MenuItem>
-//                                 </SubMenu>
-//                                 <SubMenu icon={<SiGooglemaps/>} label="Maps">
-//                                     <MenuItem> Google maps</MenuItem>
-//                                     <MenuItem> Open street maps</MenuItem>
-//                                 </SubMenu>
-//                                 <SubMenu icon={<FaAffiliatetheme/>} label="Theme">
-//                                     <MenuItem> Dark</MenuItem>
-//                                     <MenuItem> Light</MenuItem>
-//                                 </SubMenu>
-//                                 <MenuItem icon={<HiDocumentText/>}>Document</MenuItem>
-//                                 <MenuItem icon={<BsFillCalendarFill/>}>Calendar</MenuItem>
-//                                 <MenuItem icon={<FaShoppingCart/>}>E-commerce</MenuItem>
-//                                 <MenuItem icon={<RiServiceFill/>}>Examples</MenuItem>
-//                             </Menu>
-//                         </Menu>
-//                     </Sidebar>
-//                 </div>
-//             </ProSidebarProvider>
-//         </>
-//     );
-// }
-
 import 'react-pro-sidebar/dist/css/styles.css';
 import {
     ProSidebar,
@@ -55,7 +9,8 @@ import {
     SidebarContent,
 } from 'react-pro-sidebar';
 
-import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
+import { FaTachometerAlt, FaGem, FaFacebook } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 // import sidebarBg from '../../assets/bg2.jpg';
 
 
@@ -95,6 +50,7 @@ const SideBar = (props) => {
                             suffix={<span className="badge red">New</span>}
                         >
                             Dashboard
+                            <Link to="/admin"/>
                         </MenuItem>
                         {/* <MenuItem icon={<FaGem />}> components 
                         </MenuItem> */}
@@ -104,7 +60,10 @@ const SideBar = (props) => {
                             suffix={<span className="badge yellow">3</span>}
                             icon={<FaGem />}
                         >   
-                            <MenuItem>Manager Users</MenuItem>
+                            <MenuItem>
+                                Manager Users
+                                <Link to="/admin/manager-users"/>
+                            </MenuItem>
                             <MenuItem>Manager Quiz</MenuItem>
                             <MenuItem>Manager Question</MenuItem>
                         </SubMenu>
@@ -120,14 +79,14 @@ const SideBar = (props) => {
                         }}
                     >
                         <a
-                            href="https://github.com/azouaoui-med/react-pro-sidebar"
+                            href="$+#"
                             target="_blank"
                             className="sidebar-btn"
                             rel="noopener noreferrer"
                         >
-                            <FaGithub />
+                            <FaFacebook />
                             <span style={{ whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>
-                                viewSource
+                                View Profile
                             </span>
                         </a>
                     </div>

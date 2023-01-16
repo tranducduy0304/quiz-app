@@ -1,3 +1,6 @@
+.login-container {
+  overflow: hidden;
+}
 .login-container .header {
   margin: 10px 15px;
   height: 45px;

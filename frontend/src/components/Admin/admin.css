@@ -1,6 +1,17 @@
 .admin-container {
   display: flex;
+  background-color: hsla(0deg, 0%, 0%, 0.714);
 }
 .admin-container .admin-sidebar .pro-sidebar {
   height: 100vh !important;
+}
+.admin-container .admin-content {
+  width: 100%;
+}
+.admin-container .admin-content .admin-header {
+  height: 40px;
+  border: 1px solid green;
+}
+.admin-container .admin-content .admin-main {
+  border: 1px solid yellow;
 }/*# sourceMappingURL=admin.css.map */

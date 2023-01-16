@@ -1,6 +1,6 @@
 const DashBoard = (props) => {
     return ( 
-        <div>gksd</div>
+        <div>dashboard</div>
     );
 }
 

@@ -5,12 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Admin from './components/Admin/Admin';
 import User from './components/User/User';
-import SignUp from './components/SignUp/SignUp';
 import Login from './components/Auth/Login';
-import ManagerUser from './components/Admin/Content/ManageUser';
+import ManagerUser from './components/Admin/Content/ManagerUser';
 import DashBoard from './components/Admin/Content/DashBoard';
 import HomePage from './components/Home/HomePage';
-
+import SignUp from './components/Auth/Signup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
